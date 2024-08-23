@@ -122,7 +122,20 @@
                 </p>
             </div>
             <!-- Kakao map -->
-            <div id="map"></div>
+            <div class="map_wrap">
+                <div id="map"></div>
+                <!-- 지도타입 컨트롤 div -->
+                <div class="custom_typecontrol radius_border">
+                    <span id="btnRoadmap" class="selected_btn">지도</span>
+                    <span id="btnSkyview" class="btn">스카이뷰</span>
+                </div>
+                <!-- 지도 확대, 축소 컨트롤 div -->
+                <div class="custom_zoomcontrol radius_border">
+                    <span id="zoomInBtn"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
+                    <span id="zoomOutBtn"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+                </div>
+            </div>
+            <!-- map.js 파일 로드 -->
             <script src="./map.js"></script>
         </section>
     </main>
