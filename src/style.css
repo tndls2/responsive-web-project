@@ -129,3 +129,75 @@
     line-height: 20px;
     text-align: left;
 }
+
+/* Photo Gallery Styling */
+.photo-gallery {
+    display: flex;
+    flex-direction: column; /* 수직 정렬 */
+    align-items: center;
+
+}
+
+.photo-gallery__content {
+    font-family: Pretendard;
+    text-align: center;
+    margin-bottom: 40px; /* content-grid 갭 설정 */
+}
+
+.photo-gallery__content-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: rgba(217, 118, 82, 1);
+}
+
+.photo-gallery__content-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.photo-gallery__content-highlight {
+    font-size: 16px;
+    font-weight: 700; /* 굵게 설정 */
+    line-height: 20px;
+    text-align: center;
+    color: rgba(217, 118, 82, 1);
+}
+
+.photo-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* item 갭 설정 */
+}
+
+.photo-gallery__image {
+    object-fit: cover; /* img가 item 영역을 채우도록 함 */
+    width: 378px;
+    height: 378px;
+    gap: 0px;
+    border-radius: 30px; /* 모서리 둥글게 설정 */
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25); /* shadow 설정 */
+}
+
+.photo-gallery__additional {
+    text-align: center;
+    margin-top: 60px; /* 그리드와 여백 설정 */
+}
+
+.photo-gallery__additional-text {
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.photo-gallery__divider{
+    width: 1280px;
+    height: 1px;
+    background: rgba(196, 196, 196, 1);
+    margin: 40px auto 0 auto; /* 중앙에 배치 */
+}
