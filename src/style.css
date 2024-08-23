@@ -96,3 +96,37 @@
     line-height: 20px;
     text-align: left;
 }
+
+/* Main Profile Styles */
+.profile {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.profile__image {
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 100px; /* content-img 갭 설정 */
+    border-radius: 30px;
+}
+
+.profile__content {
+    font-family: Pretendard;
+    max-width: 600px; /* Adjust width as needed */
+}
+
+.profile__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.profile__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
