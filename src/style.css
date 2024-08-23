@@ -4,6 +4,7 @@
     cursor: pointer;
     border-radius: 40px; /* 모서리 둥글게 설정 */
     font-family: Pretendard;
+    text-decoration: none; /* underline 지움 */
     font-size: 16px;
     font-weight: 700;
     line-height: 19.09px;
@@ -112,7 +113,7 @@
 
 .profile__content {
     font-family: Pretendard;
-    max-width: 600px; /* Adjust width as needed */
+    max-width: 600px;
 }
 
 .profile__title {
