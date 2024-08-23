@@ -202,3 +202,17 @@
     background: rgba(196, 196, 196, 1);
     margin: 40px auto 0 auto; /* 중앙에 배치 */
 }
+
+/* Location Styling */
+.location{
+    display: flex;
+    flex-direction: column; /* 콘텐츠와 지도를 수직으로 나열 */
+    align-items: center; /* 콘텐츠를 중앙 정렬 */
+    padding: 20px; /* 필요에 따라 여백 조정 */
+}
+
+#map {
+    width: 1280px; /* 지도 너비 */
+    height: 520px; /* 지도 높이 */
+    border-radius: 12px; /* 모서리 둥글게 설정 */
+}
