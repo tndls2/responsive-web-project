@@ -1,0 +1,202 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(242, 233, 216, 1);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto; /* 고정된 높이가 아닌 자동 높이로 설정 */
+}
+
+.header__logo-image {
+    max-width: 200px; /* 로고의 최대 너비를 설정 */
+    width: 100%; /* 부모 요소의 크기에 맞게 조정 */
+    height: auto; /* 높이는 자동으로 설정 */
+    margin-left: 20px; /* 로고를 왼쪽에 약간 여백을 줌 */
+    opacity: 1; /* 로고가 보이도록 설정 */
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin-right: 20px;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.09px;
+    text-align: center;
+    border: none; /* 공통으로 사용하는 스타일 */
+}
+
+.btn--orange {
+    background: rgba(217, 118, 82, 1);
+    color: white;
+}
+
+/* Main Intro Styles */
+.intro {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space between content and image */
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 1200px; /* Set a max-width to center content */
+    background: rgba(242, 233, 216, 1); /* Match the header's background color */
+    margin: 0 auto; /* Center section horizontally */
+    gap: 20px; /* Gap between content and image */
+}
+.intro__content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 600px; /* Set a max-width to ensure proper alignment */
+}
+
+.intro__title {
+    font-family: Pretendard;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+}
+
+.intro__text {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+/* Main Profile Styles */
+/* Profile Section Styling */
+.profile {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #fff; /* Optional: Set a background color for the section */
+}
+
+.profile__image {
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 20px; /* Space between image and content */
+    border-radius: 30px;
+    width: 660px;
+    height: 390px;
+    top: 1060px;
+    left: 320px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.profile__content {
+    max-width: 600px; /* Adjust width as needed */
+}
+
+.profile__title {
+    font-family: Pretendard;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.profile__text {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+/* Main Photo Gallery Styles*/
+
+/* Photo Gallery Styling */
+.photo-gallery {
+    padding: 40px 20px;
+    background: #fff; /* Optional: Set a background color for the section */
+    max-width: 1920px; /* Ensure it fits within the maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.photo-gallery__content {
+    text-align: center;
+    margin-bottom: 40px; /* Space between content and the grid */
+}
+
+.photo-gallery__title {
+    font-family: Pretendard;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: rgba(217, 118, 82, 1);
+}
+
+.photo-gallery__text {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.photo-gallery__highlight {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(217, 118, 82, 1);
+}
+
+.photo-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between images */
+    width: 1280px; /* Fixed width for the grid */
+    height: 378px; /* Fixed height for the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+
+.photo-gallery__image {
+    object-fit: cover; /* Ensures images cover the item area */
+    width: 378px;
+    height: 378px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
