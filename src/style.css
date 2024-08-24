@@ -1,9 +1,16 @@
 /* Common Styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Pretendard;
+}
+
 .btn {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 40px; /* 모서리 둥글게 설정 */
-    font-family: Pretendard;
     text-decoration: none; /* underline 지움 */
     font-size: 16px;
     font-weight: 700;
@@ -26,8 +33,6 @@
     align-items: center;
     padding: 20px 40px;
     background: rgba(242, 233, 216, 1);
-    max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     height: auto;
 }
@@ -58,7 +63,6 @@
 .header__nav-link {
     text-decoration: none;
     color: black;
-    font-family: Pretendard;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -77,7 +81,6 @@
     gap: 20px; /* content-img 갭 설정 */
 }
 .intro__content {
-    font-family: Pretendard;
     display: flex;
     flex-direction: column; /* 수직 배치 */
     max-width: 600px;
@@ -112,7 +115,6 @@
 }
 
 .profile__content {
-    font-family: Pretendard;
     max-width: 600px;
 }
 
@@ -140,7 +142,6 @@
 }
 
 .photo-gallery__content {
-    font-family: Pretendard;
     text-align: center;
     margin-bottom: 40px; /* content-grid 갭 설정 */
 }
@@ -189,7 +190,6 @@
 }
 
 .photo-gallery__additional-text {
-    font-family: Pretendard;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
@@ -211,8 +211,96 @@
     padding: 20px; /* 필요에 따라 여백 조정 */
 }
 
+/* KakaoMap Styling*/
+.map_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+
 #map {
-    width: 1280px; /* 지도 너비 */
-    height: 520px; /* 지도 높이 */
+    width: 100%;
+    height: 100%;
+    position: relative;
     border-radius: 12px; /* 모서리 둥글게 설정 */
+}
+
+/* KakaoMap Controler Styling*/
+.radius_border {
+    border: 1px solid #919191;
+    border-radius: 5px;
+}
+
+.custom_typecontrol {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    z-index: 1;
+    font-size: 12px;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
+.custom_typecontrol span {
+    display: block;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    box-sizing: border-box; /* border와 padding을 포함하여 크기 계산 */
+    transition: background 0.3s, color 0.3s; /* 부드러운 배경색 변화 */
+    font-size: 12px; /* 글씨 크기 유지 */
+}
+
+.custom_typecontrol .btn {
+    background: linear-gradient(#fff, #e6e6e6);
+}
+
+.custom_typecontrol .btn:hover {
+    background: linear-gradient(#f5f5f5, #e3e3e3);
+}
+
+.custom_typecontrol .selected_btn {
+    color: #fff;
+    background: linear-gradient(#425470, #5b6d8a);
+}
+
+.custom_zoomcontrol {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 36px;
+    height: 80px;
+    background-color: #f5f5f5;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.custom_zoomcontrol span {
+    display: block;
+    width: 36px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid #bfbfbf;
+    box-sizing: border-box; /* border와 padding을 포함하여 크기 계산 */
+}
+
+.custom_zoomcontrol span img {
+    width: 15px;
+    height: 15px;
+    padding: 12px 0;
+    border: none;
 }
