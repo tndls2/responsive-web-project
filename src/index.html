@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About HODU</title>
+    <!-- Pretendard 폰트 불러오기 -->
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@700&display=swap" rel="stylesheet">
+    <!-- css 불러오기 -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- 카카오 지도 API 불러오기 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033eeb3ba316b2d802d2917757e39818"></script>
 </head>
 <body>
     <!-- Header -->
@@ -19,19 +23,120 @@
                 <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Support</a></li>
             </ul>
-            <button type="button" class="btn btn--orange">Download</button>
+            <button type="button" class="btn btn--orange" onclick="location.href='#'">Download</button>
         </nav>
     </header>
     <!-- Main -->
     <main class="main">
         <!-- Introduction Section -->
         <section class="intro">
+            <div class="intro__content">
+                <h1 class="intro__title">
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing and
+                </h1>
+                <p class="intro__text">
+                    Lorem Ipsum is simply dummy text of the printing and<br>
+                    typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text<br>
+                    ever since the 1500s, when an unknown
+                </p>
+                <button type="button" class="btn btn--orange" onclick="location.href='#'">Download</button>
+            </div>
+            <img src="images/main_intro.png" alt="BOX_CAT" class="intro__image"/>
         </section>
+
         <!-- Profile Section -->
         <section class="profile">
+            <img src="images/main_profile.png" alt="Cat" class="profile__image"/>
+            <div class="profile__content">
+                <h2 class="profile__title">
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing<br>
+                    and dummy text
+                </h2>
+                <p class="profile__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+                    industry.
+                </p>
+            </div>
         </section>
+
         <!-- Photo Gallery Section -->
         <section class="photo-gallery">
+            <!-- Content -->
+            <div class="photo-gallery__content">
+                <h1 class="photo-gallery__content-title">
+                    dummy text of the printing and dummy
+                </h1>
+                <p class="photo-gallery__content-text">
+                    Lorem Ipsum is simply
+                    <span class="photo-gallery__content-highlight">dummy text</span>
+                    of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                </p>
+            </div>
+
+            <!-- Grid images -->
+            <div class="photo-gallery__grid">
+                <div class="photo-gallery__item">
+                    <img src="images/gallery_item_01.png" alt="Photo 1" class="photo-gallery__image"/>
+                </div>
+                <div class="photo-gallery__item">
+                    <img src="images/gallery_item_02.png" alt="Photo 2" class="photo-gallery__image"/>
+                </div>
+                <div class="photo-gallery__item">
+                    <img src="images/gallery_item_03.png" alt="Photo 3" class="photo-gallery__image"/>
+                </div>
+                <div class="photo-gallery__item">
+                    <img src="images/gallery_item_04.png" alt="Photo 4" class="photo-gallery__image"/>
+                </div>
+                <div class="photo-gallery__item">
+                    <img src="images/gallery_item_05.png" alt="Photo 5" class="photo-gallery__image"/>
+                </div>
+                <div class="photo-gallery__item">
+                    <img src="images/gallery_item_06.png" alt="Photo 6" class="photo-gallery__image"/>
+                </div>
+            </div>
+
+            <!-- Show More -->
+            <div class="photo-gallery__additional">
+                <h2 class="photo-gallery_additional-title">
+                    Continue exploring HODU
+                </h2>
+                <button type="button" class="btn btn--orange" onclick="location.href='#'">Show more</button>
+            </div>
+
+            <!-- Divider Line -->
+            <div class="photo-gallery__divider"></div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="location">
+            <div class="location__content">
+                <h2 class="location__title">
+                    Where you’ll be
+                </h2>
+                <p class="location__text">
+                    330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                </p>
+            </div>
+            <!-- Kakao map -->
+            <div class="map_wrap">
+                <div id="map"></div>
+                <!-- 지도타입 컨트롤 div -->
+                <div class="custom_typecontrol radius_border">
+                    <span id="btnRoadmap" class="selected_btn">지도</span>
+                    <span id="btnSkyview" class="btn">스카이뷰</span>
+                </div>
+                <!-- 지도 확대, 축소 컨트롤 div -->
+                <div class="custom_zoomcontrol radius_border">
+                    <span id="zoomInBtn"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
+                    <span id="zoomOutBtn"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+                </div>
+            </div>
+            <!-- map.js 파일 로드 -->
+            <script src="./map.js"></script>
         </section>
     </main>
     <!-- Footer -->
