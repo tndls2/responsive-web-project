@@ -14,9 +14,8 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <a href="#">
-            <img src="images/header_logo.png" alt="HODU" class="header__logo-image"/>
-        </a>
+        <img src="images/header_logo.png" alt="HODU" class="header__logo-image"/>
+        <!-- navigation -->
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
@@ -137,6 +136,41 @@
             </div>
             <!-- map.js 파일 로드 -->
             <script src="./map.js"></script>
+        </section>
+
+        <!-- subscribe -->
+        <section class="subscribe">
+            <div class="subscribe__content">
+                <h1 class="subscribe__content-title">
+                    Subscribe to our Blog post
+                </h1>
+                <p class="subscribe__content-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text
+                </p>
+            </div>
+            <div class="subscribe__form">
+                <div class="subscribe__form-icon">
+                    <img src="./images/subscribe_email_icon.png" alt="Email">
+                </div>
+                <input type="email" placeholder="Enter your e-mail address" class="subscribe__form-input">
+                <button class="btn btn--orange" onclick="openModal()">Subscribe</button>
+            </div>
+
+            <!-- 모달 구조 -->
+            <div id="subscribeModal" class="modal">
+                <div class="modal__content">
+                    <span class="modal__close">&times;</span>
+                    <div class="modal__image">
+                        <img src="./images/modal_cat.png" alt="Cat">
+                    </div>
+                    <h2>Thank you!</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+                    <button class="btn btn--orange modal__close-btn">OK! I Love HODU</button>
+                </div>
+            </div>
+            <!-- subscribe_modal.js 파일 로드 -->
+            <script src="subscribe_modal.js"></script>
         </section>
     </main>
     <!-- Footer -->
