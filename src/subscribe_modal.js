@@ -12,10 +12,6 @@ function closeModal() {
 document.addEventListener('DOMContentLoaded', function() {
     // 모달을 여는 버튼을 클릭했을 때
     document.querySelector('.btn.btn--orange').addEventListener('click', openModal);
-
-    // 모달 닫기 버튼을 클릭했을 때
-    document.querySelector('.modal__close').addEventListener('click', closeModal);
-
     // 모달 닫기 버튼을 클릭했을 때
     document.querySelector('.modal__close-btn').addEventListener('click', closeModal);
 

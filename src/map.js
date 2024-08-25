@@ -24,11 +24,11 @@ window.onload = () => {
         if (maptype === 'roadmap') {
             map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
             roadmapControl.className = 'selected_btn';
-            skyviewControl.className = 'btn';
+            skyviewControl.className = 'unselected_btn';
         } else {
             map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
             skyviewControl.className = 'selected_btn';
-            roadmapControl.className = 'btn';
+            roadmapControl.className = 'unselected_btn';
         }
     }
 

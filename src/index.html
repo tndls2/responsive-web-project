@@ -12,6 +12,18 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033eeb3ba316b2d802d2917757e39818"></script>
 </head>
 <body>
+    <!-- 모달 구조 -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal__content">
+            <img src="./images/modal_cat.png" alt="Cat" class="modal__image">
+            <h2>Thank you!</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+            <button class="btn btn--orange modal__close-btn">OK! I Love HODU</button>
+        </div>
+    </div>
+    <!-- subscribe_modal.js 파일 로드 -->
+    <script src="subscribe_modal.js"></script>
+
     <!-- Header -->
     <header class="header">
         <img src="images/header_logo.png" alt="HODU" class="header__logo-image"/>
@@ -31,14 +43,11 @@
         <section class="intro">
             <div class="intro__content">
                 <h1 class="intro__title">
-                    Lorem Ipsum is simply<br>
-                    dummy text of the printing and
+                    Lorem Ipsum is simply dummy text of the printing and
                 </h1>
                 <p class="intro__text">
-                    Lorem Ipsum is simply dummy text of the printing and<br>
-                    typesetting industry.<br>
-                    Lorem Ipsum has been the industry's standard dummy text<br>
-                    ever since the 1500s, when an unknown
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 </p>
                 <button type="button" class="btn btn--orange" onclick="location.href='#'">Download</button>
             </div>
@@ -50,13 +59,11 @@
             <img src="images/main_profile.png" alt="Cat" class="profile__image"/>
             <div class="profile__content">
                 <h2 class="profile__title">
-                    Lorem Ipsum is simply<br>
-                    dummy text of the printing<br>
-                    and dummy text
+                    Lorem Ipsum is simply dummy text of the printing and dummy text
                 </h2>
                 <p class="profile__text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting<br>
-                    industry.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 </p>
             </div>
         </section>
@@ -105,10 +112,10 @@
                 </h2>
                 <button type="button" class="btn btn--orange" onclick="location.href='#'">Show more</button>
             </div>
-
-            <!-- Divider Line -->
-            <div class="photo-gallery__divider"></div>
         </section>
+
+        <!-- Divider Line -->
+        <div class="divider"></div>
 
         <!-- Map Section -->
         <section class="location">
@@ -126,7 +133,7 @@
                 <!-- 지도타입 컨트롤 div -->
                 <div class="custom_typecontrol radius_border">
                     <span id="btnRoadmap" class="selected_btn">지도</span>
-                    <span id="btnSkyview" class="btn">스카이뷰</span>
+                    <span id="btnSkyview" class="unselected_btn">스카이뷰</span>
                 </div>
                 <!-- 지도 확대, 축소 컨트롤 div -->
                 <div class="custom_zoomcontrol radius_border">
@@ -156,21 +163,6 @@
                 <input type="email" placeholder="Enter your e-mail address" class="subscribe__form-input">
                 <button class="btn btn--orange" onclick="openModal()">Subscribe</button>
             </div>
-
-            <!-- 모달 구조 -->
-            <div id="subscribeModal" class="modal">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <div class="modal__image">
-                        <img src="./images/modal_cat.png" alt="Cat">
-                    </div>
-                    <h2>Thank you!</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
-                    <button class="btn btn--orange modal__close-btn">OK! I Love HODU</button>
-                </div>
-            </div>
-            <!-- subscribe_modal.js 파일 로드 -->
-            <script src="subscribe_modal.js"></script>
         </section>
     </main>
     <!-- Footer -->
@@ -181,7 +173,7 @@
         </div>
         <!-- logo & sns icon -->
         <div class="footer-bottom">
-            <img src="./images/footer_logo.png" alt="Logo" class="footer-logo">
+            <img src="./images/footer_logo.png" alt="Logo" class="footer__logo-img">
             <div class="footer-sns">
                 <div class="sns-icon">
                     <img src="./images/footer_icon_blog.png" alt="Blog">
