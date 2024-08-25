@@ -304,3 +304,99 @@ html, body {
     padding: 12px 0;
     border: none;
 }
+
+/* Footer Styles */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.footer .footer-image-container {
+    width: 1920px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.footer .footer-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer .footer-bottom {
+    display: flex;
+    justify-content: space-between; /* 좌우 공간을 자동으로 나누어 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 1920px;
+    height: 160px;
+    padding: 45px 320px; /* 위, 아래 45px / 좌, 우 320px */
+    position: absolute;
+    top: 340px; /* footer 영역 바로 아래에 위치하도록 수정 */
+    left: 50%;
+    transform: translateX(-50%); /* 중앙 정렬 */
+    gap: 0px;
+    opacity: 1; /* 보이도록 설정 */
+}
+
+.footer .footer-logo {
+    height: 70px; /* 로고 크기 조정, 필요에 따라 조절 */
+}
+
+.footer .footer-sns {
+    display: flex;
+    gap: 20px; /* SNS 아이콘 사이 간격 조절 */
+    position: relative; /* 각 SNS 아이콘을 절대적으로 위치시키기 위해 필요 */
+}
+
+/* 원형 배경 설정 */
+.footer .footer-sns img {
+    width: 42px; /* SNS 아이콘의 크기 조정 */
+    height: 42px; /* SNS 아이콘의 크기 조정 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    background: rgba(242, 157, 82, 1); /* 배경 색상 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain; /* 아이콘이 원 안에 잘 맞게 설정 */
+}
+
+.footer .footer-sns .sns-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit:  contain; /* 이미지가 원형 배경 안에 잘 맞도록 설정 */
+}
+
+.footer .footer-logo {
+    height: 70px; /* 로고 크기 조정, 필요에 따라 조절 */
+}
+
+.footer .footer-sns {
+    display: flex;
+    gap: 20px; /* SNS 아이콘 사이 간격 조절 */
+    position: relative; /* 각 SNS 아이콘을 절대적으로 위치시키기 위해 필요 */
+}
+
+/* 원형 배경 설정 */
+.footer .footer-sns img {
+    width: 42px; /* SNS 아이콘의 크기 조정 */
+    height: 42px; /* SNS 아이콘의 크기 조정 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    background: rgba(242, 157, 82, 1); /* 배경 색상 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain; /* 아이콘이 원 안에 잘 맞게 설정 */
+}
+
+.footer .footer-sns .sns-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit:  contain; /* 이미지가 원형 배경 안에 잘 맞도록 설정 */
+}
