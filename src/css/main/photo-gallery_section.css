@@ -41,17 +41,20 @@
 
 .photo-gallery__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 73px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .photo-gallery__image {
-    object-fit: cover; /* img가 item 영역을 채우도록 함 */
-    width: 378px;
-    height: 378px;
-    border-radius: 30px; /* 모서리 둥글게 설정 */
-    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25); /* shadow 설정 */
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
 }
+
 
 .photo-gallery__additional {
     display: flex;
