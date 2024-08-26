@@ -9,6 +9,16 @@
     height: auto;
 }
 
+/* 스크롤 시 헤더가 고정되는 클래스 */
+.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(242, 233, 216, 0.95);
+}
+
 .header__menu-icon{
     display: none;  /* 기본적으로 메뉴바 아이콘을 숨김 */
 }
