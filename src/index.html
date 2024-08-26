@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@700&display=swap" rel="stylesheet">
     <!-- css 불러오기 -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mobile_style.css">
+
     <!-- 카카오 지도 API 불러오기 -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033eeb3ba316b2d802d2917757e39818"></script>
 </head>
@@ -24,9 +26,28 @@
     <!-- subscribe_modal.js 파일 로드 -->
     <script src="subscribe_modal.js"></script>
 
+    <!-- sidebar -->
+    <div id="sidebar" class="sidebar">
+        <img src="images/sidebar_arrow_right.png" alt="Back" class="sidebar__back-icon" onclick="toggleSidebar()"/>
+        <nav class="sidebar__nav">
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">Home</a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">About</a></li>
+                <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">Support</a></li>
+            </ul>
+            <button type="button" class="btn btn--orange" onclick="location.href='#'">Download</button>
+        </nav>
+    </div>
+    <!-- subscribe_modal.js 파일 로드 -->
+    <script src="sidebar.js"></script>
+
     <!-- Header -->
     <header class="header">
         <img src="images/header_logo.png" alt="HODU" class="header__logo-image"/>
+
+        <!-- menubar icon -->
+        <img src="images/header_menu_icon.png" alt="Menu" class="header__menu-icon" onclick="toggleSidebar()"/>
+
         <!-- navigation -->
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -36,6 +57,7 @@
             </ul>
             <button type="button" class="btn btn--orange" onclick="location.href='#'">Download</button>
         </nav>
+
     </header>
     <!-- Main -->
     <main class="main">
@@ -62,8 +84,7 @@
                     Lorem Ipsum is simply dummy text of the printing and dummy text
                 </h2>
                 <p class="profile__text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
             </div>
         </section>
@@ -171,10 +192,10 @@
         <div class="footer-image-container">
             <img src="./images/footer_cat.png" alt="Background Image">
         </div>
-        <!-- logo & sns icon -->
+        <!-- logo & sns icon & nav-->
         <div class="footer-bottom">
             <img src="./images/footer_logo.png" alt="Logo" class="footer__logo-img">
-            <div class="footer-sns">
+            <div class="footer__sns">
                 <div class="sns-icon">
                     <img src="./images/footer_icon_blog.png" alt="Blog">
                 </div>
@@ -188,6 +209,15 @@
                     <img src="./images/footer_icon_youtube.png" alt="YouTube">
                 </div>
             </div>
+        </div>
+        <!-- 우측 링크 목록 -->
+        <div class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">About</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Blog</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Support</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Term of Use</a></li>
+            </ul>
         </div>
     </footer>
 
