@@ -4,9 +4,10 @@
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
-    z-index: 1001;
+    z-index: 1003;
     width: 289px;
     height: 100%;
+    top: 0;
     right: -289px; /* 사이드바를 화면 밖에 숨김 */
     background: rgba(38, 49, 64, 1);
     transition: right 0.3s ease-in-out; /* 부드러운 애니메이션 */

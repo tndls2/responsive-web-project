@@ -2,6 +2,7 @@
     /* Header Styles */
     .header {
         padding: 20px;
+        width: calc(100% - 20px * 2);
     }
 
     .header__logo-image {
@@ -27,7 +28,6 @@
         font-weight: 700;
         line-height: 18px;
         text-align: center;
-
     }
 
     /* Main Introduction Section Styles */
@@ -183,7 +183,7 @@
     }
 
     /* Modal Styles */
-    .modal__content{
+    .modal__content {
         width: 300px;
         height: 300px;
     }
@@ -200,17 +200,16 @@
     .modal p {
         margin-bottom: 28px;
     }
-    .modal .btn{
+    .modal .btn {
         margin-bottom: 30px;
         width: 158px;
         height: 40px;
     }
-    .modal .btn--orange{
+    .modal .btn--orange {
         font-size: 14px;
         font-weight: 700;
         line-height: 18px;
         text-align: center;
-
     }
 
     /* Footer Styles */
