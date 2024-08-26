@@ -30,7 +30,7 @@
             <img src="src/images/modal/modal_cat.png" alt="Cat" class="modal__image">
             <h2>Thank you!</h2>
             <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
-            <button class="btn--orange modal__close-btn">OK! I Love HODU</button>
+            <button class="btn--orange" id="modalSubmitBtn">OK! I Love HODU</button>
         </div>
     </div>
     <!-- subscribe_modal.js 파일 로드 -->
@@ -166,9 +166,11 @@
                     <span id="zoomInBtn"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
                     <span id="zoomOutBtn"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
                 </div>
+                <!-- 지도 새로고침 컨트롤 div -->
                 <div class="custom_refreshcontrol radius_border">
                     <span id="resetBtn"><img src="./src/images/main/main_location_map_refresh_icon.png" alt="Refresh"/></span>
                 </div>
+                <!-- 지도 전체화면보기 컨트롤 div -->
                 <div class="custom_expandcontrol radius_border">
                     <span id="expandBtn"><img src="./src/images/main/main_location_map_expand_icon.png" alt="FullScreen"/></span>
                 </div>
@@ -193,8 +195,8 @@
                 <div class="subscribe__form-icon">
                     <img src="src/images/main/main_subscribe_email_icon.png" alt="Email">
                 </div>
-                <input type="email" placeholder="Enter your e-mail address" class="subscribe__form-input">
-                <button class="btn--orange" onclick="openModal()">Subscribe</button>
+                <input type="email" placeholder="Enter your e-mail address" class="subscribe__form-input" id="emailInput">
+                <button class="btn--orange" onclick="validateEmail()">Subscribe</button>
             </div>
         </section>
     </main>
