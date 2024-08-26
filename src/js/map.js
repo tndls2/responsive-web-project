@@ -17,34 +17,47 @@ window.onload = () => {
 
     marker.setMap(map); // 마커 표시
 
-    // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
-    function setMapType(maptype) {
-        var roadmapControl = document.getElementById('btnRoadmap');
-        var skyviewControl = document.getElementById('btnSkyview');
-        if (maptype === 'roadmap') {
-            map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
-            roadmapControl.className = 'selected_btn';
-            skyviewControl.className = 'unselected_btn';
-        } else {
-            map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
-            skyviewControl.className = 'selected_btn';
-            roadmapControl.className = 'unselected_btn';
-        }
-    }
+    // 일반 지도-스카이뷰로 지도 타입 전환
+    var mapTypeControl = new kakao.maps.MapTypeControl();
 
-    // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+    // 지도에 컨트롤 추가 (TOPRIGHT = 오른쪽 위)
+    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+    // 지도 확대
     function zoomIn() {
         map.setLevel(map.getLevel() - 1);
     }
 
-    // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+    // 지도 축소
     function zoomOut() {
         map.setLevel(map.getLevel() + 1);
     }
 
+    // 확대/축소 초기화
+    function resetMap() {
+        map.setCenter(new kakao.maps.LatLng(33.442350330462986, 126.5715035533668));
+        map.setLevel(3);
+    }
+
+    // 지도 전체화면
+    // 참고: https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen
+    function expandScreen(element) {
+        if (!document.fullscreenElement) {
+            element.requestFullscreen().catch((err) => {
+                alert(
+                    `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
+                );
+            });
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
     // 버튼 클릭 이벤트 리스너 추가
-    document.getElementById('btnRoadmap').addEventListener('click', () => setMapType('roadmap'));
-    document.getElementById('btnSkyview').addEventListener('click', () => setMapType('skyview'));
     document.getElementById('zoomInBtn').addEventListener('click', zoomIn);
     document.getElementById('zoomOutBtn').addEventListener('click', zoomOut);
+    document.getElementById('resetBtn').addEventListener('click', resetMap);
+    document.getElementById("expandBtn").onclick = function () {
+        expandScreen(container)
+    };
 };
