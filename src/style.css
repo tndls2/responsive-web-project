@@ -544,6 +544,10 @@ html, body {
 }
 
 /* Footer Styles */
+.footer {
+    position: relative; /* 내부 요소를 기준으로 위치 조정 */
+}
+
 .footer .footer-image-container {
     width: 100%;
     height: 340px;
@@ -577,19 +581,20 @@ html, body {
 }
 
 /* 우측 링크 목록 스타일 */
-.footer .footer__nav {
+.footer__nav {
     display: none;
-    position: fixed; /* 페이지의 전체 너비를 사용하여 고정 위치 */
-    right: 0;
-    bottom: 0px;
-    z-index: 1000; /* 다른 요소 위에 위치하도록 설정 */
-
+    position: absolute; /* 절대 위치 설정 */
+    right: 21px;
+    bottom: 28px;
 }
 
 .footer__nav-list {
     list-style: none; /* 기본 리스트 스타일 제거 */
     padding: 0;
     margin: 0;
+    width: 100%; /* 페이지 전체 너비 사용 */
+    z-index: 1000; /* 다른 요소 위에 위치하도록 설정 */
+    text-align: right; /* 오른쪽 정렬 */
 }
 
 .footer__nav-item {
@@ -603,7 +608,6 @@ html, body {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    text-align: left;
 }
 
 
