@@ -11,7 +11,7 @@ function closeModal() {
 // DOMContentLoaded 이벤트를 통해 DOM이 완전히 로드된 후에 이벤트 리스너 추가
 document.addEventListener('DOMContentLoaded', function() {
     // 모달을 여는 버튼을 클릭했을 때
-    document.querySelector('.btn.btn--orange').addEventListener('click', openModal);
+    document.querySelector('.btn--orange').addEventListener('click', openModal);
     // 모달 닫기 버튼을 클릭했을 때
     document.querySelector('.modal__close-btn').addEventListener('click', closeModal);
 

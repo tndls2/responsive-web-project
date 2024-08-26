@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-
+    /* Header Styles */
     .header {
         padding: 20px;
     }
@@ -11,11 +11,11 @@
     }
 
     .header__nav {
-        display: none; /* 네비게이션 메뉴를 숨김 */
+        display: none; /* 네비게이션 메뉴 숨김 */
     }
 
     .header__menu-icon {
-        display: block; /* 메뉴바 아이콘을 표시 */
+        display: block; /* 메뉴바 아이콘 표시 */
     }
 
     .sidebar .btn--orange {
@@ -30,7 +30,7 @@
 
     }
 
-    /* Main Introduction Section */
+    /* Main Introduction Section Styles */
     .intro {
         display: flex;
         flex-direction: column; /* 수직 정렬 */
@@ -61,7 +61,7 @@
         width: 50.5%;
     }
 
-    /* Main Profile Section */
+    /* Main Profile Section Styles */
     .profile {
         display: flex;
         flex-direction: column; /* 수직 정렬 */
@@ -84,7 +84,7 @@
         line-height: 30px;
     }
 
-    /* Main Photo Gallery Section */
+    /* Main Photo-Gallery Section Styles */
     .photo-gallery {
         padding: 60px 8.2%;
         /*gap: 40px;*/
@@ -100,7 +100,7 @@
     }
 
     .photo-gallery__grid {
-        grid-template-columns: 1fr; /* 1열 레이아웃 */
+        grid-template-columns: 1fr; /* 모바일 화면에서는 1열 레이아웃 설정 */
         gap: 32px;
     }
 
@@ -123,10 +123,12 @@
         height: 50px;
     }
 
+    /* Main Divider Styles */
     .divider {
         margin: 0 8.2% 40px 8.2%;
     }
 
+    /* Main Location Section Styles */
     .location {
         padding: 0;
     }
@@ -136,6 +138,7 @@
         line-height: 30px;
     }
 
+    /* Main Subscribe Section Styles */
     .subscribe {
         flex-direction: column;
         min-height: 348px;
@@ -179,6 +182,7 @@
         line-height: 18px;
     }
 
+    /* Modal Styles */
     .modal__content{
         width: 300px;
         height: 300px;
@@ -209,6 +213,7 @@
 
     }
 
+    /* Footer Styles */
     .footer .footer-image-container {
         height: 240px;
     }
@@ -218,7 +223,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 30px 8.2% 24px 8.2%;
-        position: relative; /* 위치 조정을 위한 상대적 위치 설정 */
+        position: relative;
     }
 
     .footer .footer__logo-img {
@@ -232,10 +237,10 @@
     }
 
     .footer__nav {
-        display: block; /* 모바일 화면에서 표시 */
+        display: block; /* 네비게이션 리스트 표시 */
     }
 
     .scroll-top-btn{
-        display: none;
+        display: none; /* 스크롤탑 버튼 숨김 */
     }
 }

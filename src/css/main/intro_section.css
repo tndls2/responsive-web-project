@@ -1,0 +1,29 @@
+/* Main Intro Styles */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16%;
+    background: rgba(242, 233, 216, 1);
+    gap: 8%;
+}
+.intro__content {
+    display: flex;
+    flex-direction: column; /* 수직 배치 */
+    gap: 40px;
+    text-align: left;
+}
+
+.intro__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.intro__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+}

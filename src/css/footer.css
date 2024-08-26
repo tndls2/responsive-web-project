@@ -1,0 +1,79 @@
+/* Footer Styles */
+.footer {
+    position: relative;
+}
+
+.footer-image-container {
+    width: 100%;
+    height: 340px;
+}
+
+.footer-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* 좌우 공간 나누어 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 160px;
+    gap: 0px;
+    padding: 0 16.6%;
+}
+
+.footer__logo-img {
+    max-width: 226px;
+    height: auto;
+}
+
+.footer__sns {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__nav {
+    display: none;
+    position: absolute;
+    right: 21px;
+    bottom: 28px;
+}
+
+.footer__nav-list {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right; /* 오른쪽 정렬 */
+}
+
+.footer__nav-item {
+    margin-bottom: 16px;
+}
+
+.footer__nav-link {
+    text-decoration: none; /* 기본 링크 밑줄 제거 */
+    color: rgba(118, 118, 118, 1);
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer__sns-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; /* 원형 */
+    background: rgba(242, 157, 82, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__sns-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain; /* 아이콘이 원 안에 잘 맞게 설정 */
+}

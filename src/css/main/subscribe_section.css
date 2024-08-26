@@ -1,0 +1,88 @@
+/* Main Subscribe Styles */
+.subscribe {
+    position: relative;
+    left: 50%; /* 위치 조정 */
+    transform: translate(-50%, 50%); /* 위치 조정 */
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 66vw;
+    border-radius: 30px;
+    background: rgba(38, 49, 64, 1);
+    padding: 50px 58px;
+    box-sizing: border-box;
+}
+
+.subscribe__content {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.subscribe__content-title {
+    font-family: Pretendard;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    color: white;
+    margin: 0px;
+}
+
+.subscribe__content-text {
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: white;
+    margin: 0px;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 60px;
+    background: white;
+    padding: 0 6px 0 28px;
+    gap: 10px;
+}
+
+.subscribe__form-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe__form-input {
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    outline: none; /* 포커스 시 나타나는 기본 아웃라인 제거 */
+}
+.subscribe__form .btn--orange{
+    width: 25.5%;
+    height: 50px;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+}
+.subscribe__form-input::placeholder {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(118, 118, 118, 1);
+
+}

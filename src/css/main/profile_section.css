@@ -1,0 +1,36 @@
+/* Main Profile Styles */
+.profile {
+    display: flex;
+    justify-content: center;
+    padding: 80px 16%;
+    background: #fff;
+    align-items: center;
+    gap: 8%; /* content-img 갭 설정 */
+}
+
+.profile__image {
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column; /* 수직 배치 */
+    gap: 30px;
+}
+
+.profile__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    margin: 0px;
+}
+
+.profile__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin: 0px;
+}
