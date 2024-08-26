@@ -1,0 +1,250 @@
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .header__logo-image {
+        max-width: 92px;
+        width: 100%;
+        height: auto;
+    }
+
+    .header__nav {
+        display: none; /* 네비게이션 메뉴를 숨김 */
+    }
+
+    .header__menu-icon {
+        display: block; /* 메뉴바 아이콘을 표시 */
+    }
+
+    .sidebar .btn--orange {
+        width: 114px;
+        height: 40px;
+        margin-left: 40px;
+        font-family: Pretendard;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+
+    }
+
+    /* Main Introduction Section */
+    .intro {
+        display: flex;
+        flex-direction: column; /* 수직 정렬 */
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        gap: 30px;
+    }
+
+    .intro__content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .intro__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .intro__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .intro__image {
+        width: 50.5%;
+    }
+
+    /* Main Profile Section */
+    .profile {
+        display: flex;
+        flex-direction: column; /* 수직 정렬 */
+        align-items: center;
+        padding: 40px 8.2%;
+        gap: 40px;
+    }
+
+    .profile__image {
+        width: 100%;
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .profile__content {
+        gap: 20px;
+    }
+
+    .profile__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    /* Main Photo Gallery Section */
+    .photo-gallery {
+        padding: 60px 8.2%;
+        /*gap: 40px;*/
+    }
+
+    .photo-gallery__content {
+        gap: 30px;
+    }
+
+    .photo-gallery__content-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .photo-gallery__grid {
+        grid-template-columns: 1fr; /* 1열 레이아웃 */
+        gap: 32px;
+    }
+
+    .photo-gallery__image {
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+
+    .photo-gallery__additional {
+        margin-top: 60px;
+    }
+
+    .photo-gallery__additional-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .photo-gallery__additional .btn--orange {
+        width: 143px;
+        height: 50px;
+    }
+
+    .divider {
+        margin: 0 8.2% 40px 8.2%;
+    }
+
+    .location {
+        padding: 0;
+    }
+
+    .location__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        min-height: 348px;
+        padding: 32px 36px;
+        justify-content: flex-start;
+        gap: 30px;
+        transform: translate(-50%, 20%);
+        width: 76vw;
+    }
+
+    .subscribe__content {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .subscribe__content-title {
+        font-size: 24px;
+    }
+
+    .subscribe__form {
+        width: 100%;
+        height: 40px;
+        padding: 0 6px 0 16px;
+    }
+
+    .subscribe__form-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .subscribe__form-input::placeholder {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .subscribe__form .btn--orange {
+        margin-top: 120px;
+        width: 115px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .modal__content{
+        width: 300px;
+        height: 300px;
+    }
+    .modal__image {
+        width: 60px;
+        height: 62px;
+        margin-top: 40px;
+    }
+    .modal h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .modal p {
+        margin-bottom: 28px;
+    }
+    .modal .btn{
+        margin-bottom: 30px;
+        width: 158px;
+        height: 40px;
+    }
+    .modal .btn--orange{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+
+    }
+
+    .footer .footer-image-container {
+        height: 240px;
+    }
+
+    .footer .footer-bottom {
+        height: 178px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 8.2% 24px 8.2%;
+    }
+
+    .footer .footer__logo-img {
+        max-width: 112px;
+        height: auto;
+        margin-bottom: 58px;
+    }
+
+    .footer .footer__sns {
+        gap: 16px;
+    }
+
+    .footer__nav {
+        display: block; /* 모바일 화면에서 표시 */
+        position: fixed; /* 페이지의 전체 너비를 사용하여 고정 위치 */
+        bottom: 0; /* 페이지 하단에 위치 */
+        right: 0; /* 페이지 오른쪽 끝에 위치 */
+        background-color: #f5f5f5; /* 배경색 설정 */
+        padding: 10px; /* 여백 설정 */
+        box-shadow: 0 -1px 10px rgba(0,0,0,0.1); /* 그림자 추가 */
+        width: 100%; /* 페이지 전체 너비 사용 */
+        max-width: 1000px; /* 최대 너비 설정 */
+        margin: 0 auto; /* 중앙 정렬 */
+        z-index: 1000; /* 다른 요소 위에 위치하도록 설정 */
+    }
+
+    .scroll-top-btn{
+        display: none;
+    }
+}
