@@ -56,7 +56,6 @@
 .footer__nav-link {
     text-decoration: none; /* 기본 링크 밑줄 제거 */
     color: rgba(118, 118, 118, 1);
-    font-family: Pretendard;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;

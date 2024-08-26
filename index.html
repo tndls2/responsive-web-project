@@ -7,18 +7,18 @@
     <!-- Pretendard 폰트 불러오기 -->
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@700&display=swap" rel="stylesheet">
     <!-- css 불러오기 -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="css/main/intro_section.css">
-    <link rel="stylesheet" type="text/css" href="css/main/profile_section.css">
-    <link rel="stylesheet" type="text/css" href="css/main/photo-gallery_section.css">
-    <link rel="stylesheet" type="text/css" href="css/main/location_section.css">
-    <link rel="stylesheet" type="text/css" href="css/main/subscribe_section.css">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/header.css">
+    <link rel="stylesheet" type="text/css" href="src/css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main/intro_section.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main/profile_section.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main/photo-gallery_section.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main/location_section.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main/subscribe_section.css">
+    <link rel="stylesheet" type="text/css" href="src/css/modal.css">
 
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile_style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="src/css/mobile_style.css">
 
     <!-- 카카오 지도 API 불러오기 -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033eeb3ba316b2d802d2917757e39818"></script>
@@ -27,18 +27,18 @@
     <!-- 모달 구조 -->
     <div id="subscribeModal" class="modal">
         <div class="modal__content">
-            <img src="images/modal/modal_cat.png" alt="Cat" class="modal__image">
+            <img src="src/images/modal/modal_cat.png" alt="Cat" class="modal__image">
             <h2>Thank you!</h2>
             <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
             <button class="btn--orange modal__close-btn">OK! I Love HODU</button>
         </div>
     </div>
     <!-- subscribe_modal.js 파일 로드 -->
-    <script src="js/subscribe_modal.js"></script>
+    <script src="src/js/subscribe_modal.js"></script>
 
     <!-- sidebar -->
     <div id="sidebar" class="sidebar">
-        <img src="images/etc/sidebar_arrow_right.png" alt="Back" class="sidebar__back-icon" onclick="toggleSidebar()"/>
+        <img src="src/images/etc/sidebar_arrow_right.png" alt="Back" class="sidebar__back-icon" onclick="toggleSidebar()"/>
         <nav class="sidebar__nav">
             <ul class="sidebar__nav-list">
                 <li class="sidebar__nav-item"><a href="#" class="sidebar__nav-link">Home</a></li>
@@ -49,14 +49,14 @@
         </nav>
     </div>
     <!-- subscribe_modal.js 파일 로드 -->
-    <script src="js/sidebar.js"></script>
+    <script src="src/js/sidebar.js"></script>
 
     <!-- Header -->
     <header class="header">
-        <img src="images/header/header_logo.png" alt="HODU" class="header__logo-image"/>
+        <img src="src/images/header/header_logo.png" alt="HODU" class="header__logo-image"/>
 
         <!-- menubar icon -->
-        <img src="images/header/header_menu_icon.png" alt="Menu" class="header__menu-icon" onclick="toggleSidebar()"/>
+        <img src="src/images/header/header_menu_icon.png" alt="Menu" class="header__menu-icon" onclick="toggleSidebar()"/>
 
         <!-- navigation -->
         <nav class="header__nav">
@@ -83,12 +83,12 @@
                 </p>
                 <button type="button" class="btn--orange" onclick="location.href='#'">Download</button>
             </div>
-            <img src="images/main/main_intro.png" alt="BOX_CAT" class="intro__image"/>
+            <img src="src/images/main/main_intro.png" alt="BOX_CAT" class="intro__image"/>
         </section>
 
         <!-- Profile Section -->
         <section class="profile">
-            <img src="images/main/main_profile.png" alt="Cat" class="profile__image"/>
+            <img src="src/images/main/main_profile.png" alt="Cat" class="profile__image"/>
             <div class="profile__content">
                 <h2 class="profile__title">
                     Lorem Ipsum is simply dummy text of the printing and dummy text
@@ -117,22 +117,22 @@
             <!-- Grid images -->
             <div class="photo-gallery__grid">
                 <div class="photo-gallery__item">
-                    <img src="images/main/photo-gallery_section/gallery_item_01.png" alt="Photo 1" class="photo-gallery__image"/>
+                    <img src="src/images/main/photo-gallery_section/gallery_item_01.png" alt="Photo 1" class="photo-gallery__image"/>
                 </div>
                 <div class="photo-gallery__item">
-                    <img src="images/main/photo-gallery_section/gallery_item_02.png" alt="Photo 2" class="photo-gallery__image"/>
+                    <img src="src/images/main/photo-gallery_section/gallery_item_02.png" alt="Photo 2" class="photo-gallery__image"/>
                 </div>
                 <div class="photo-gallery__item">
-                    <img src="images/main/photo-gallery_section/gallery_item_03.png" alt="Photo 3" class="photo-gallery__image"/>
+                    <img src="src/images/main/photo-gallery_section/gallery_item_03.png" alt="Photo 3" class="photo-gallery__image"/>
                 </div>
                 <div class="photo-gallery__item">
-                    <img src="images/main/photo-gallery_section/gallery_item_04.png" alt="Photo 4" class="photo-gallery__image"/>
+                    <img src="src/images/main/photo-gallery_section/gallery_item_04.png" alt="Photo 4" class="photo-gallery__image"/>
                 </div>
                 <div class="photo-gallery__item">
-                    <img src="images/main/photo-gallery_section/gallery_item_05.png" alt="Photo 5" class="photo-gallery__image"/>
+                    <img src="src/images/main/photo-gallery_section/gallery_item_05.png" alt="Photo 5" class="photo-gallery__image"/>
                 </div>
                 <div class="photo-gallery__item">
-                    <img src="images/main/photo-gallery_section/gallery_item_06.png" alt="Photo 6" class="photo-gallery__image"/>
+                    <img src="src/images/main/photo-gallery_section/gallery_item_06.png" alt="Photo 6" class="photo-gallery__image"/>
                 </div>
             </div>
 
@@ -173,7 +173,7 @@
                 </div>
             </div>
             <!-- map.js 파일 로드 -->
-            <script src="js/map.js"></script>
+            <script src="src/js/map.js"></script>
         </section>
 
         <!-- subscribe -->
@@ -189,7 +189,7 @@
             </div>
             <div class="subscribe__form">
                 <div class="subscribe__form-icon">
-                    <img src="images/main/main_subscribe_email_icon.png" alt="Email">
+                    <img src="src/images/main/main_subscribe_email_icon.png" alt="Email">
                 </div>
                 <input type="email" placeholder="Enter your e-mail address" class="subscribe__form-input">
                 <button class="btn--orange" onclick="openModal()">Subscribe</button>
@@ -200,23 +200,23 @@
     <footer class="footer">
         <!-- 고양이 이미지 -->
         <div class="footer-image-container">
-            <img src="images/footer/footer_cat.png" alt="Background Image">
+            <img src="src/images/footer/footer_cat.png" alt="Background Image">
         </div>
         <!-- logo & sns icon & nav-->
         <div class="footer-bottom">
-            <img src="images/footer/footer_logo.png" alt="Logo" class="footer__logo-img">
+            <img src="src/images/footer/footer_logo.png" alt="Logo" class="footer__logo-img">
             <div class="footer__sns">
                 <div class="footer__sns-icon">
-                    <img src="images/footer/footer_icon_blog.png" alt="Blog">
+                    <img src="src/images/footer/footer_icon_blog.png" alt="Blog">
                 </div>
                 <div class="footer__sns-icon">
-                    <img src="images/footer/footer_icon_instagram.png" alt="Instagram">
+                    <img src="src/images/footer/footer_icon_instagram.png" alt="Instagram">
                 </div>
                 <div class="footer__sns-icon">
-                    <img src="images/footer/footer_icon_facebook.png" alt="Facebook">
+                    <img src="src/images/footer/footer_icon_facebook.png" alt="Facebook">
                 </div>
                 <div class="footer__sns-icon">
-                    <img src="images/footer/footer_icon_youtube.png" alt="YouTube">
+                    <img src="src/images/footer/footer_icon_youtube.png" alt="YouTube">
                 </div>
             </div>
         </div>
@@ -233,8 +233,8 @@
 
     <!-- scroll top btn -->
     <div id="scrollTopBtn" class="scroll-top-btn">
-        <img src="images/etc/scroll_arrow_up_not_click.png" alt="Scroll to Top" class="scroll-top-btn-img">
+        <img src="src/images/etc/scroll_arrow_up_not_click.png" alt="Scroll to Top" class="scroll-top-btn-img">
     </div>
-    <script src="js/scroll_top.js"></script>
+    <script src="src/js/scroll_top.js"></script>
 </body>
 </html>
