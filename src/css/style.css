@@ -29,10 +29,9 @@ html, body {
     margin: 0 16.6% 68px 16.6%; /* 중앙에 배치 */
 }
 
-/* Scroll top button Styles*/
 .scroll-top-btn {
     position: fixed;
-    bottom: 24px;
+    bottom: 19px;
     right: 24px;
     width: 50px;
     height: 50px;

@@ -239,7 +239,8 @@
         display: block; /* 네비게이션 리스트 표시 */
     }
 
-    .scroll-top-btn{
-        display: none; /* 스크롤탑 버튼 숨김 */
+    .scroll-top-btn {
+        display: none !important; /* 스크롤탑 버튼 숨김 (!important: 다른 규칙들보다 우선순위 높임)*/
     }
+
 }
