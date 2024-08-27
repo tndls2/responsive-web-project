@@ -130,9 +130,11 @@
 
     /* Main Location Section Styles */
     .location {
-        padding: 0;
+        margin: 0 8.2%;
     }
-
+    .map_wrap {
+        height: 260px;
+    }
     .location__title {
         font-size: 24px;
         line-height: 30px;
@@ -141,7 +143,7 @@
     /* Main Subscribe Section Styles */
     .subscribe {
         flex-direction: column;
-        min-height: 348px;
+        min-height: 310px;
         padding: 32px 36px;
         justify-content: flex-start;
         gap: 30px;
