@@ -20,6 +20,9 @@ HTML, CSS, JavaScript로 구현한 PC/Mobile 반응형 페이지
 - 개발기간 : 2024.08.22 - 2024.08.27
 
 # 🚀 기술스택
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+
+
 - `HTML5`: 시멘틱 태그를 사용하여 웹 페이지의 구조 정의
 - `CSS3`: Flexbox 및 Grid 레이아웃을 사용하여 반응형 디자인 구현
 - `JavaScript`: DOM 조작, 이벤트 핸들링 및 API 연동(카카오 지도 API 포함)
