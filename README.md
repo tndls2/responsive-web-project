@@ -1,11 +1,24 @@
-# responsive-web-project
+# 🖥 responsive-web-project📱
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df75a3e3-3fdc-4d7d-a177-4393f3cc7e91" alt="Project Image">
+</p>
+
+### 목차
+1. [프로젝트 개요 📖](#-프로젝트-개요)
+2. [요구사항 명세서 📄](#-요구사항-명세서)
+3. [기능 정의 🔎](#-기능-정의)
+4. [폴더구조 🗂](#-폴더구조)
+5. [배포 ⚙️](#%EF%B8%8F-배포)
+
+
+# 📖 프로젝트 개요
 HTML, CSS, JavaScript로 구현한 PC/Mobile 반응형 페이지
+- 프로젝트 개요 : HTML, CSS, JavaScript를 사용하여 PC와 모바일 환경에 적합한 반응형 웹 페이지를 구현
+- 프로젝트 목표 : 사용자 경험을 극대화하기 위해 데스크탑과 모바일 디바이스에서 모두 적절한 레이아웃을 제공   
+     (화면 크기에 따라 레이아웃과 스타일이 동적으로 변화하도록 설계)
+- 개발기간 : 2024.08.22 - 2024.08.27
 
-## ⚙️ 배포
-`Github Page` 기능을 사용하여 배포  
-https://tndls2.github.io/responsive-web-project/
-
-## 📄 요구사항 명세서
+# 📄 요구사항 명세서
 1. [피그마](https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-오르미(BE)_HTML%2FCSS%2FJS?node-id=104924-12&t=DkHqKMa1PBxYw4n3-0)를 참고하여 페이지 구현을 합니다.
 2. 모바일 화면도 고려하여 페이지 구현을 합니다.
 3. 스크롤시 헤더가 고정되게 합니다. (단, 처음에는 고정된 상태가 아닙니다.)
@@ -17,3 +30,67 @@ https://tndls2.github.io/responsive-web-project/
     1. 이메일을 입력하고 `Subscribe` 버튼을 클릭하면 모달창이 나타납니다.
     2. 이메일 유효성 검사를 진행해야 합니다. (값이 들어가지 않거나 이메일 형식이 유효하지 않으면 alert 창으로 경고 문구가 떠야합니다.)
     3. 이메일이 잘 입력되었다면 모달창이 뜹니다. 이때 모달창의 `OK! I love HODU` 버튼을 클릭하면 form이 제출되고 모달창이 닫힙니다.
+
+# 🔎 기능 정의
+
+
+# 🗂 폴더구조
+```
+.
+├── README.md
+├── index.html
+└── src
+    ├── css
+    │   ├── footer.css
+    │   ├── header.css
+    │   ├── main
+    │   │   ├── intro_section.css
+    │   │   ├── location_section.css
+    │   │   ├── photo-gallery_section.css
+    │   │   ├── profile_section.css
+    │   │   └── subscribe_section.css
+    │   ├── mobile_style.css
+    │   ├── modal.css
+    │   ├── sidebar.css
+    │   └── style.css
+    ├── images
+    │   ├── etc
+    │   │   ├── scroll_arrow_up_click.png
+    │   │   ├── scroll_arrow_up_not_click.png
+    │   │   └── sidebar_arrow_right.png
+    │   ├── footer
+    │   │   ├── footer_cat.png
+    │   │   ├── footer_icon_blog.png
+    │   │   ├── footer_icon_facebook.png
+    │   │   ├── footer_icon_instagram.png
+    │   │   ├── footer_icon_youtube.png
+    │   │   └── footer_logo.png
+    │   ├── header
+    │   │   ├── header_logo.png
+    │   │   └── header_menu_icon.png
+    │   ├── main
+    │   │   ├── main_intro.png
+    │   │   ├── main_location_map_expand_icon.png
+    │   │   ├── main_location_map_refresh_icon.png
+    │   │   ├── main_profile.png
+    │   │   ├── main_subscribe_email_icon.png
+    │   │   └── photo-gallery_section
+    │   │       ├── gallery_item_01.png
+    │   │       ├── gallery_item_02.png
+    │   │       ├── gallery_item_03.png
+    │   │       ├── gallery_item_04.png
+    │   │       ├── gallery_item_05.png
+    │   │       └── gallery_item_06.png
+    │   └── modal
+    │       ├── modal_background.png
+    │       └── modal_cat.png
+    └── js
+        ├── map.js
+        ├── scroll_top.js
+        ├── sidebar.js
+        └── subscribe_modal.js
+```
+
+# ⚙️ 배포
+`Github Page` 기능을 사용하여 배포  
+https://tndls2.github.io/responsive-web-project/
