@@ -24,7 +24,7 @@ HTML, CSS, JavaScript로 구현한 PC/Mobile 반응형 페이지
 
 
 - `HTML5`: 시멘틱 태그를 사용하여 웹 페이지의 구조 정의
-- `CSS3`: Flexbox 및 Grid 레이아웃을 사용하여 반응형 디자인 구현
+- `CSS3`: Flexbox 및 Grid 레이아웃을 사용하여 반응형 디자인 구현, BEM(Block Element Modifier) 표기법 도입
 - `JavaScript`: DOM 조작, 이벤트 핸들링 및 API 연동(카카오 지도 API 포함)
 
 # 📄 요구사항 명세서
