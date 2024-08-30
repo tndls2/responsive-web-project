@@ -61,8 +61,6 @@ HTML, CSS, JavaScript로 구현한 PC/Mobile 반응형 페이지
 ├── index.html
 └── src
     ├── css
-    │   ├── footer.css
-    │   ├── header.css
     │   ├── main
     │   │   ├── intro_section.css
     │   │   ├── location_section.css
@@ -70,8 +68,6 @@ HTML, CSS, JavaScript로 구현한 PC/Mobile 반응형 페이지
     │   │   ├── profile_section.css
     │   │   └── subscribe_section.css
     │   ├── mobile_style.css
-    │   ├── modal.css
-    │   ├── sidebar.css
     │   └── style.css
     ├── images
     │   ├── etc
@@ -86,6 +82,7 @@ HTML, CSS, JavaScript로 구현한 PC/Mobile 반응형 페이지
     │   │   ├── footer_icon_youtube.png
     │   │   └── footer_logo.png
     │   ├── header
+    │   │   ├── favicon.png
     │   │   ├── header_logo.png
     │   │   └── header_menu_icon.png
     │   ├── main
