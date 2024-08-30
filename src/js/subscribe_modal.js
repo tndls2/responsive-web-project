@@ -10,7 +10,8 @@ function closeModal() {
 
 // 이메일 유효성 검사 함수
 function validateEmail() {
-    const emailInput = document.getElementById('emailInput').value;
+    const emailInputElement = document.getElementById('emailInput');
+    const emailInput = emailInputElement.value; // 입력된 이메일 값을 가져옴
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailInput === '') {
@@ -20,6 +21,8 @@ function validateEmail() {
     } else {
         openModal();
     }
+    emailInputElement.value = ''; // 이메일 입력 필드를 비움
+
 }
 
 // DOMContentLoaded 이벤트를 통해 DOM이 완전히 로드된 후에 이벤트 리스너 추가
@@ -35,6 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('subscribeModal');
         if (event.target === modal) {
             closeModal();
+        }
+    });
+
+    document.getElementById('emailInput').addEventListener('keypress', function(event) {
+        const emailInputElement = document.getElementById('emailInput');
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            emailInputElement.value = ''; // 이메일 입력 필드를 비움
         }
     });
 });
