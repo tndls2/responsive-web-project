@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About HODU</title>
+    <!-- 파비콘 추가 -->
+    <link rel="icon" href="src/images/header/favicon.png" type="image/x-icon">
+
     <!-- Pretendard 폰트 불러오기 -->
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@700&display=swap" rel="stylesheet">
     <!-- css 불러오기 -->
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="src/css/header.css">
-    <link rel="stylesheet" type="text/css" href="src/css/sidebar.css">
     <link rel="stylesheet" type="text/css" href="src/css/main/intro_section.css">
     <link rel="stylesheet" type="text/css" href="src/css/main/profile_section.css">
     <link rel="stylesheet" type="text/css" href="src/css/main/photo-gallery_section.css">
     <link rel="stylesheet" type="text/css" href="src/css/main/location_section.css">
     <link rel="stylesheet" type="text/css" href="src/css/main/subscribe_section.css">
-    <link rel="stylesheet" type="text/css" href="src/css/modal.css">
-    <link rel="stylesheet" type="text/css" href="src/css/footer.css">
     <link rel="stylesheet" type="text/css" href="src/css/mobile_style.css">
-
-    <!-- 카카오 지도 API 불러오기 -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033eeb3ba316b2d802d2917757e39818"></script>
 </head>
 <body>
     <!-- 모달 구조 -->
@@ -32,8 +28,6 @@
             <button class="btn--orange" id="modalSubmitBtn">OK! I Love HODU</button>
         </div>
     </div>
-    <!-- subscribe_modal.js 파일 로드 -->
-    <script src="src/js/subscribe_modal.js"></script>
 
     <!-- sidebar -->
     <div id="sidebar" class="sidebar">
@@ -67,8 +61,6 @@
             <button type="button" class="btn--orange" onclick="location.href='#'">Download</button>
         </nav>
     </header>
-    <!-- header.js 파일 로드 -->
-    <script src="src/js/header.js"></script>
     <!-- Main -->
     <main class="main">
         <!-- Introduction Section -->
@@ -176,8 +168,6 @@
                 </div>
 
             </div>
-            <!-- map.js 파일 로드 -->
-            <script src="src/js/map.js"></script>
         </section>
 
         <!-- subscribe -->
@@ -204,7 +194,6 @@
         <div id="scrollTopBtn" class="scroll-top-btn">
             <img src="src/images/etc/scroll_arrow_up_not_click.png" alt="Scroll to Top" class="scroll-top-btn-img">
         </div>
-        <script src="src/js/scroll_top.js"></script>
 
     </main>
     <!-- Footer -->
@@ -241,5 +230,16 @@
             </ul>
         </div>
     </footer>
+
+    <!-- 카카오 지도 API 불러오기 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033eeb3ba316b2d802d2917757e39818"></script>
+    <!-- header.js 파일 로드 -->
+    <script src="src/js/header.js"></script>
+    <!-- map.js 파일 로드 -->
+    <script src="src/js/map.js"></script>
+    <!-- subscribe_modal.js 파일 로드 -->
+    <script src="src/js/subscribe_modal.js"></script>
+    <!-- scroll_top.js 파일 로드 -->
+    <script src="src/js/scroll_top.js"></script>
 </body>
 </html>
