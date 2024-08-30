@@ -1,16 +1,18 @@
-// 스크립트가 로드된 후 실행되도록 설정
+// 지도의 중심좌표(제주특별자치도 제주시 첨단로 330)
+const CENTER_LAT = 33.442350330462986;
+const CENTER_LNG = 126.57150355336688;
+// 지도 확대, 축소 정도
+const DEPTH_LEVEL = 3;
 window.onload = () => {
     var container = document.getElementById('map'); // 지도를 담을 영역의 DOM 레퍼런스
+    var markerPosition = new kakao.maps.LatLng(CENTER_LAT, CENTER_LNG);
+
     var options = {
-        center: new kakao.maps.LatLng(33.442350330462986, 126.57150355336688), // 지도의 중심좌표(제주특별자치도 제주시 첨단로 330)
-        level: 3 // 확대, 축소 정도
+        center: markerPosition,
+        level: DEPTH_LEVEL
     };
 
     var map = new kakao.maps.Map(container, options);  // 지도 생성
-
-    // 마커가 표시될 위치 (제주특별자치도 제주시 첨단로 330)
-    var markerPosition = new kakao.maps.LatLng(33.442350330462986, 126.57150355336688);
-
     var marker = new kakao.maps.Marker({
         position: markerPosition
     });
@@ -33,10 +35,10 @@ window.onload = () => {
         map.setLevel(map.getLevel() + 1);
     }
 
-    // 확대/축소 초기화
+    // 컨트롤 초기화
     function resetMap() {
-        map.setCenter(new kakao.maps.LatLng(33.442350330462986, 126.5715035533668));
-        map.setLevel(3);
+        map.setCenter(markerPosition);
+        map.setLevel(DEPTH_LEVEL);
     }
 
     // 지도 전체화면
